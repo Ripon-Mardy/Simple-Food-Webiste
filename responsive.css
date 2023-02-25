@@ -1,0 +1,69 @@
+@media screen and (max-width:1004px)
+{
+    .banner h1 {
+        font-size: 47px;
+    }
+    .banner a {
+        padding: 12px 24px;
+    }
+}
+@media screen and (max-width:778px)
+{
+    .picture-filter {
+        grid-template-columns: repeat(2, auto);
+    }
+    .sucess-count {
+        grid-template-columns: repeat(2, auto);
+    }
+} 
+@media screen and (max-width:768px)
+{
+    .banner h1 {
+        font-size: 34px;
+    }
+}
+@media screen and (max-width:572px) 
+{
+    header ul {
+        position: absolute;
+        left: -200px;
+        top: 0;
+        background: black;
+        height: 100vh;
+        padding: 40px;
+        transition: all .3s ease-in-out;
+    }
+    header ul li 
+    {
+        display: block;
+        padding: 10px 0;
+    }
+    .menu-icons
+    {
+    display: block;
+    }
+    .close
+    {
+        display: block;
+    }
+    .picture-filter {
+        grid-template-columns: repeat(1, auto);
+        text-align: center;
+    }
+    .sucess-count {
+        grid-template-columns: repeat(1, auto);
+    }
+}
+@media screen and (max-width:532px)
+{
+    .advan-tow-right {
+        margin-top: 35px;
+    }
+    .email {
+        width: 100%;
+        margin-bottom: 23px;
+    }
+    .name input {
+        width: 100%;
+    }
+} 

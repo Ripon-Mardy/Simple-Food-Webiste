@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body
+{
+    overflow-x: hidden;
+}
+a
+{
+    text-decoration: none;
+}
+.heading-text
+{
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.number-color
+{
+    color: var(--number-color);
+    font-weight: 800;
+    font-size: 65px;
+}
+.number-title
+{
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+:root
+{
+    --number-color:#f66415;
+}
+
+/* == menu icons ==  */
+.menu-icons
+{
+    display: none;
+}
+.header ul
+{
+    position: relative;
+}
+.close
+{
+    display: none;
+}
+.close span
+{
+    color:white;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    top: 10px;
+}
+.menu-icons span
+{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 10px;
+}
+/* === end defult css ===  */
+header
+{
+    background-color: rgba(0, 0, 0, 0.808);
+    backdrop-filter: blur(20px);
+    height: 50px;
+}
+header ul
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+}
+header ul li
+{
+    display: inline-block;
+    margin-top: 12px;
+    padding: 0 10px;
+}
+header ul li a
+{
+    color: white;
+    font: size 24px;
+    font-weight: 700;
+}
+
+/* ==== banner section ===  */
+.banner-section
+{
+    background: url(img/home.jpg) center no-repeat;
+    background-size: cover;
+    padding: 170px 0;
+}
+.banner h1
+{
+    color: white;
+    font-weight: 800;
+    font-size: 65px;
+}
+.banner h4
+{
+    color: white;
+    margin-top: 14px;
+}
+.banner a
+{
+    padding: 15px 48px;
+    background-color: #e75709;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 10px;
+    transition: .3s;
+}
+.banner a:hover
+{
+    background-color: #bd480a;
+}
+
+/* ==== advantage section ===  */
+.advantage-section
+{
+    background:#feefe7 ;
+}
+.advantage-right img
+{
+    width: 100%;
+}
+.advan-tow-left img
+{
+    width: 100%;
+}
+
+/* === discount section ===  */
+.discount-section
+{
+    background-color: var(--number-color);
+}
+.discount-title h1
+{
+    color: white;
+    font-weight: 700;
+}
+.discount-title a
+{
+    color: black;
+    padding: 16px 39px;
+    display: inline-block;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: white;
+    transition: .3s;
+}
+.discount-title a:hover
+{
+    background-color: black;
+    color: white;
+}
+
+/* ==== picture section ===  */
+.picture-section
+{
+    background: #332c29;
+}
+.picture-filter
+{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+}
+.filter-img
+{
+    height: 300px;
+}
+.filter-img img
+{
+    max-width: 350px; 
+    transition: all .5s ease;
+}
+.filter-img
+{
+    position: relative;
+    overflow: hidden;
+}
+.filter-img::after
+{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .4;
+}
+.filter-img:hover.filter-img img
+{
+    transform: scale(1.2);
+}
+.filter-img-title
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter-img-title h2
+{
+    color: white;
+    font-weight: 800;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+    z-index: 1;
+}
+.filter-img:hover .filter-img-title h2
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* === pricing section ===  */
+.pricing-section
+{
+    background: #feefe7;
+}
+.pricing-title
+{
+    background-color: white;
+    padding: 25px;
+    margin-top: 20px;
+}
+.pricing-title h4
+{
+    font-weight: 700;
+    
+}
+.pricing-title h4.pricing-text
+{
+    color: var(--number-color);
+}
+
+/* === about section ===  */
+.about-left img
+{
+    width: 100%;
+}
+.about-right h3
+{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.about-right img
+{
+    width: 200px;
+}
+
+/* ==== success section  ===  */
+.success-section
+{
+    background: url(img/sucess.jpg);
+    color: white;
+}
+.sucess-count
+{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+}
+.success-count-number h3
+{
+    color: var(--number-color);
+    font-weight: 800;
+}
+.sucess-title h2
+{
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* === contact secction ==  */
+.contact-left h3
+{
+    font-weight: 700;
+}
+.contact-left p
+{
+    margin-bottom: 20px;
+}
+.textarea textarea
+{
+    width: 100%;
+}
+.email 
+{
+    width: 48%;
+    float: left;
+    margin-right: 20px;
+}
+.email  input
+{
+    width: 100%;
+}
+.name input
+{
+    width: 48%;
+}
+.email  input, .name input
+{
+    padding: 20px 10px;
+    outline: none;
+}
+.name
+{
+    margin-bottom: 20px;
+}
+.contact-right img
+{
+    width: 100%;
+}
+.contact-left a
+{
+    background-color: var(--number-color);
+    padding: 13px 28px;
+    display: inline-block;
+    color: white;
+    margin-top: 10px;
+}
+
+/* ==== footer section ===  */
+footer
+{
+    background: black;
+    color: white;
+    text-align: center;
+}
